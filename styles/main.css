@@ -1,116 +1,119 @@
-/*
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 nav {
-    display: flex;
-    height: 6rem;
-    padding-inline-start: 2rem;
+  display: flex;
+  height: 6rem;
+  -webkit-padding-start: 2rem;
+          padding-inline-start: 2rem;
 }
 
 nav ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-items: space-between;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-items: space-between;
 }
 
 nav a {
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    font-family: sans-serif;
-    color: #4f4f4e;
-    font-weight: bold;
-    margin-inline-end: 1rem;
-    font-size: 1.15rem;
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  font-family: sans-serif;
+  color: #4f4f4e;
+  font-weight: bold;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+  font-size: 1.15rem;
 }
 
 nav a:hover {
-    color: #2890d5;
-    transition: 0.3s ease;
+  color: #2890d5;
+  transition: 0.3s ease;
 }
 
 nav .logo {
-    margin-inline-end: 3rem;
+  -webkit-margin-end: 3rem;
+          margin-inline-end: 3rem;
 }
 
 .main-page {
-    display: grid;
-    place-items: center;
-    height: 88vh;
-    background-image: url(img/sec1-bg.jpg);
-    background-size: cover;
+  display: grid;
+  place-items: center;
+  height: 88vh;
+  background-image: url(img/sec1-bg.jpg);
+  background-size: cover;
 }
 
 .main-page h2 {
-    font-size: 48px;
-    font-family: Arial;
-    color: white;
-    font-style: italic;
-    margin-block-end: 2rem;
+  font-size: 48px;
+  font-family: Arial;
+  color: white;
+  font-style: italic;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
 }
 
 .main-page button {
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: Verdana;
-    background-color: #2890d5;
-    width: 220px;
-    height: 45px;
-    border: none;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: Verdana;
+  background-color: #2890d5;
+  width: 220px;
+  height: 45px;
+  border: none;
 }
 
 .main-page button:hover {
-    background-color: #2073aa;
-    transition: 0.3s ease;
+  background-color: #2073aa;
+  transition: 0.3s ease;
 }
 
 .main-page .banner-main-page {
-    text-align: center;
+  text-align: center;
 }
 
 .services {
-    display: grid;
-    place-items: center;
-    height: 88vh;
-    background-color: #323d3f;
+  display: grid;
+  place-items: center;
+  height: 88vh;
+  background-color: #323d3f;
 }
 
 .banner-services {
-    text-align: center;
+  text-align: center;
 }
 
 .banner-services h2 {
-    color: #f28924;
-    font-family: Verdana;
-    font-size: 24px;
-    margin-block-end: 3rem;
+  color: #f28924;
+  font-family: Verdana;
+  font-size: 24px;
+  -webkit-margin-after: 3rem;
+          margin-block-end: 3rem;
 }
 
 .banner-services h3 {
-    font-family: Verdana;
-    color: white;
-    font-size: 32px;
+  font-family: Verdana;
+  color: white;
+  font-size: 32px;
 }
 
 .services-list {
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(3, 25%);
-    justify-content: space-between;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    font-family: Verdana;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  justify-content: space-between;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-family: Verdana;
 }
 
 .services-list img {
-    width: 300px;
+  width: 301px;
 }
 
 /*
@@ -127,7 +130,6 @@ display: grid;
 
 .pozadie1 {
 height: 50em; /* 800px */
-
 /*
 background-image: url(fotky/banner-bg.jpg);
 background-position: center;
@@ -325,7 +327,6 @@ transition: 0.5s ease;
 }
 
 /* title, button, bg img */
-
 /* 
 .title-home {
     display: flex;
@@ -355,4 +356,4 @@ button {
     font-size: 14px;
 }
 
-*/
+*//*# sourceMappingURL=main.css.map */
