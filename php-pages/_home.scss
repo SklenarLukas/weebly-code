@@ -1,113 +1,191 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+// @import '../abstracts/reset';
+
 * {
     margin: 0;
     padding: 0;
+    body {
+        font-family: "Verdana", Geneva, Tahoma, sans-serif;
+        color: $white-text;
+        text-align: center;
+    }
 }
 
 nav {
     display: flex;
-    height: 6rem;
-    padding-inline-start: 2rem;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-items: space-between;
-}
-
-nav a {
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
-    font-family: sans-serif;
-    color: #4f4f4e;
-    font-weight: bold;
-    margin-inline-end: 1rem;
-    font-size: 1.15rem;
-    color: #323d3f;
-}
-
-nav a:hover {
-    color: #2890d5;
-    transition: 0.3s ease;
-}
-
-nav .logo {
-    margin-inline-end: 3rem;
+    height: toRem(120);
+    @include nav-style;
 }
 
 .main-page {
     display: grid;
     place-items: center;
-    height: 88vh;
-    background-image: url('../img/home-img/landing-bg.jpg');
+    height: 74dvh;
+    background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1975787020.jpg");
     background-size: cover;
-}
-
-.main-page h2 {
-    font-size: 48px;
-    font-family: Arial;
-    color: white;
-    font-style: italic;
-    margin-block-end: 2rem;
-}
-
-.main-page button {
-    color: white;
-    font-size: 14px;
-    font-weight: bold;
-    font-family: Verdana;
-    background-color: #2890d5;
-    width: 220px;
-    height: 45px;
-    border: none;
-}
-
-.main-page button:hover {
-    background-color: #2073aa;
-    transition: 0.3s ease;
-}
-
-.main-page .banner-main-page {
-    text-align: center;
+    h2 {
+        font: {
+            size: toRem(48);
+            family: Arial;
+            weight: bold;
+            style: italic;
+        }
+        color: $white-text;
+        margin-block-end: 2rem;
+    }
+    button {
+        @include blue-button;
+        display: inline-block; //idk, test
+    }
 }
 
 .services {
-    display: grid;
+    height: 80dvh;
+    /* display: grid;
     place-items: center;
     height: 88vh;
+    */
     background-color: #323d3f;
+    .banner-services h2 {
+        padding-block-start: 5rem;
+        @include orange-text;
+    }
+    h3 {
+        @include white-small-title;
+        margin: 4rem 0 4rem 0;
+    }
+    button {
+        @include blue-button;
+        margin-block-start: 2rem;
+    }
+    .services-list {
+        margin: 0 13rem 0 13rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        .col {
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            h2 {
+                margin-top: 2rem;
+                @include white-under-img-title;
+            }
+        }
+    }
 }
 
-.banner-services {
-    text-align: center;
-}
-
-.banner-services h2 {
-    color: #f28924;
-    font-family: Verdana;
-    font-size: 24px;
-    margin-block-end: 3rem;
-}
-
-.banner-services h3 {
-    font-family: Verdana;
-    color: white;
-    font-size: 32px;
-}
-
-.services-list {
-    width: 80%;
+.chinese-wall {
+    background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1623097286.jpg");
+    height: 75dvh;
     display: grid;
-    grid-template-columns: repeat(3, 25%);
-    justify-content: space-between;
-    color: white;
-    text-align: center;
-    font-size: 16px;
-    font-family: Verdana;
+    justify-items: center;
+    .title-field {
+        margin-top: 3rem;
+        height: 80%;
+        width: 48%;
+        background-color: $white-opacity-bg;
+        .destinations-title {
+            @include orange-text;
+            margin-top: 4rem;
+        }
+        h2 {
+            @include white-medium-title;
+            color: $black-text;
+            margin: 3rem 0 3rem 0;
+        }
+        p {
+            color: $grey-text;
+            padding: 0 7rem 0 7rem;
+        }
+        button {
+            @include blue-button;
+            margin-top: 3rem;
+        }
+    }
 }
 
-.services-list img {
-    width: 301px;
+.tools {
+    background-color: $grey-bg;
+    h2 {
+        @include white-medium-title;
+        padding: 2.5rem 0 2.5rem 0;
+    }
+    h4 {
+        @include orange-text;
+        padding-top: 5rem;
+    }
+    h5 {
+        @include normal-black-text;
+        color: $grey-text;
+        font-weight: bold;
+    }
+    h6 {
+        font-size: toRem(18);
+        font-weight: bold;
+        padding-bottom: 2.5rem;
+    }
+    p {
+        @include normal-black-text;
+        padding: 3rem 0 4rem 0;
+    }
+    .tools-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 10rem 0 10rem;
+        .col {
+            padding: 1.5rem;
+            background-color: $white-background;
+            width: 92%;
+            margin-bottom: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            img {
+                padding: 3rem 0 3rem 0;
+                align-self: center;
+            }
+        }
+    }
+}
+
+.reviews {
+    background-color: $grey-bg;
+    display: grid;
+    place-items: center;
+    h2 {
+        @include white-medium-title;
+        padding: 2.5rem 0 2.5rem 0;
+    }
+    h4 {
+        @include orange-text;
+        padding-top: 5rem;
+    }
+    h5 {
+        @include normal-black-text;
+        color: $grey-text;
+        font-weight: bold;
+    }
+    h6 {
+        font-size: toRem(22);
+        font-family: "Georgia", Times New Roman, Times, serif;
+        font-style: italic;
+        margin-bottom: 6rem;
+    }
+    div {
+        width: 50%;
+        blockquote {
+            font: {
+                size: toRem(100);
+                family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; //tu sa musim pohrať s fontom
+            }
+            text-align: left;
+            margin-left: -4rem;
+        }
+    }
+    p {
+        @include normal-white-text;
+        margin: 2rem 0 10rem 0;
+    }
 }

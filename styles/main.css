@@ -1,40 +1,121 @@
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+img,
+pre,
+ul,
+ol,
+li,
+a {
   margin: 0;
   padding: 0;
 }
 
-nav {
-  display: flex;
-  height: 6rem;
-  -webkit-padding-start: 2rem;
-          padding-inline-start: 2rem;
+ul,
+ol {
+  list-style: none;
 }
 
+a,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  text-align: inherit;
+}
+
+input[type=checkbox],
+input[type=radio],
+input[type=file],
+input[type=range],
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  height: 7.5rem;
+}
 nav ul {
   display: flex;
   list-style: none;
-  align-items: center;
-  justify-items: space-between;
+  place-items: center;
+  margin-left: 12.5rem;
 }
-
 nav a {
   display: flex;
   text-decoration: none;
   justify-content: center;
-  font-family: sans-serif;
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
   color: #4f4f4e;
   font-weight: bold;
   -webkit-margin-end: 1rem;
           margin-inline-end: 1rem;
-  font-size: 1.15rem;
-  color: #323d3f;
+  font-size: 1.125rem;
 }
-
 nav a:hover {
   color: #2890d5;
   transition: 0.3s ease;
 }
-
+nav a:focus {
+  color: #2890d5;
+}
 nav .logo {
   -webkit-margin-end: 3rem;
           margin-inline-end: 3rem;
@@ -43,76 +124,230 @@ nav .logo {
 .main-page {
   display: grid;
   place-items: center;
-  height: 88vh;
-  background-image: url("../img/home-img/landing-bg.jpg");
+  height: 74dvh;
+  background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1975787020.jpg");
   background-size: cover;
 }
-
 .main-page h2 {
-  font-size: 48px;
+  font-size: 3rem;
   font-family: Arial;
-  color: white;
+  font-weight: bold;
   font-style: italic;
+  color: #ffffff;
   -webkit-margin-after: 2rem;
           margin-block-end: 2rem;
 }
-
 .main-page button {
-  color: white;
-  font-size: 14px;
+  color: #ffffff;
+  font-size: 0.875rem;
   font-weight: bold;
   font-family: Verdana;
   background-color: #2890d5;
-  width: 220px;
-  height: 45px;
+  width: 13.75rem;
+  height: 2.8125rem;
+  text-align: center;
+  text-transform: uppercase;
   border: none;
+  display: inline-block;
 }
-
 .main-page button:hover {
   background-color: #2073aa;
   transition: 0.3s ease;
 }
 
-.main-page .banner-main-page {
-  text-align: center;
-}
-
 .services {
-  display: grid;
+  height: 80dvh;
+  /* display: grid;
   place-items: center;
   height: 88vh;
+  */
   background-color: #323d3f;
 }
-
-.banner-services {
-  text-align: center;
-}
-
-.banner-services h2 {
+.services .banner-services h2 {
+  -webkit-padding-before: 5rem;
+          padding-block-start: 5rem;
   color: #f28924;
-  font-family: Verdana;
-  font-size: 24px;
-  -webkit-margin-after: 3rem;
-          margin-block-end: 3rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
-
-.banner-services h3 {
-  font-family: Verdana;
-  color: white;
-  font-size: 32px;
+.services h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 4rem 0 4rem 0;
 }
-
-.services-list {
-  width: 80%;
-  display: grid;
-  grid-template-columns: repeat(3, 25%);
-  justify-content: space-between;
-  color: white;
+.services button {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-family: Verdana;
+  background-color: #2890d5;
+  width: 13.75rem;
+  height: 2.8125rem;
   text-align: center;
-  font-size: 16px;
-  font-family: Verdana;
+  text-transform: uppercase;
+  border: none;
+  -webkit-margin-before: 2rem;
+          margin-block-start: 2rem;
+}
+.services button:hover {
+  background-color: #2073aa;
+  transition: 0.3s ease;
+}
+.services .services-list {
+  margin: 0 13rem 0 13rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.services .services-list .col {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+.services .services-list .col h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
-.services-list img {
-  width: 301px;
+.chinese-wall {
+  background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1623097286.jpg");
+  height: 75dvh;
+  display: grid;
+  justify-items: center;
+}
+.chinese-wall .title-field {
+  margin-top: 3rem;
+  height: 80%;
+  width: 48%;
+  background-color: rgba(255, 255, 255, 0.9019607843);
+}
+.chinese-wall .title-field .destinations-title {
+  color: #f28924;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 4rem;
+}
+.chinese-wall .title-field h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 3rem 0 3rem 0;
+}
+.chinese-wall .title-field p {
+  color: #3f3f3f;
+  padding: 0 7rem 0 7rem;
+}
+.chinese-wall .title-field button {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-family: Verdana;
+  background-color: #2890d5;
+  width: 13.75rem;
+  height: 2.8125rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 3rem;
+}
+.chinese-wall .title-field button:hover {
+  background-color: #2073aa;
+  transition: 0.3s ease;
+}
+
+.tools {
+  background-color: #323D3F;
+}
+.tools h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2.5rem 0 2.5rem 0;
+}
+.tools h4 {
+  color: #f28924;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 5rem;
+}
+.tools h5 {
+  font-size: 1rem;
+  color: #000000;
+  color: #3f3f3f;
+  font-weight: bold;
+}
+.tools h6 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding-bottom: 2.5rem;
+}
+.tools p {
+  font-size: 1rem;
+  color: #000000;
+  padding: 3rem 0 4rem 0;
+}
+.tools .tools-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 10rem 0 10rem;
+}
+.tools .tools-list .col {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  width: 92%;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+.tools .tools-list .col img {
+  padding: 3rem 0 3rem 0;
+  align-self: center;
+}
+
+.reviews {
+  background-color: #323D3F;
+  display: grid;
+  place-items: center;
+}
+.reviews h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2.5rem 0 2.5rem 0;
+}
+.reviews h4 {
+  color: #f28924;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 5rem;
+}
+.reviews h5 {
+  font-size: 1rem;
+  color: #000000;
+  color: #3f3f3f;
+  font-weight: bold;
+}
+.reviews h6 {
+  font-size: 1.375rem;
+  font-family: "Georgia", Times New Roman, Times, serif;
+  font-style: italic;
+  margin-bottom: 6rem;
+}
+.reviews div {
+  width: 50%;
+}
+.reviews div blockquote {
+  font-size: 6.25rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: left;
+  margin-left: -4rem;
+}
+.reviews p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 2rem 0 10rem 0;
 }/*# sourceMappingURL=main.css.map */

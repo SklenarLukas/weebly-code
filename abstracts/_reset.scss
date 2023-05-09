@@ -1,0 +1,82 @@
+@import './mixins';
+@import './variables';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+img,
+pre,
+ul,
+ol,
+li,
+a {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+ul,
+ol {
+	list-style: none;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+	background-color: transparent;
+	border: none;
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	text-align: inherit;
+}
+
+input[type='checkbox'],
+input[type='radio'],
+input[type='file'],
+input[type='range'],
+select {
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
