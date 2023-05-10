@@ -63,15 +63,10 @@ nav {
         margin: 0 13rem 0 13rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        .col {
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            justify-self: center;
-            h2 {
-                margin-top: 2rem;
-                @include white-under-img-title;
-            }
+        column-gap: 2rem;
+        h2 {
+            margin-top: 2rem;
+            @include white-under-img-title;
         }
     }
 }
@@ -133,11 +128,11 @@ nav {
     .tools-list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        column-gap: 4rem;
         margin: 0 10rem 0 10rem;
         .col {
             padding: 1.5rem;
             background-color: $white-background;
-            width: 92%;
             margin-bottom: 5rem;
             display: flex;
             flex-direction: column;
@@ -178,7 +173,7 @@ nav {
         blockquote {
             font: {
                 size: toRem(100);
-                family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; //tu sa musim pohrať s fontom
+                family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; //tu sa musim pohrať s fontom
             }
             text-align: left;
             margin-left: -4rem;

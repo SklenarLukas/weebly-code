@@ -198,14 +198,10 @@ nav .logo {
   margin: 0 13rem 0 13rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
 }
-.services .services-list .col {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-self: center;
-}
-.services .services-list .col h2 {
+.services .services-list h2 {
   margin-top: 2rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -292,12 +288,13 @@ nav .logo {
 .tools .tools-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
   margin: 0 10rem 0 10rem;
 }
 .tools .tools-list .col {
   padding: 1.5rem;
   background-color: #ffffff;
-  width: 92%;
   margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
@@ -350,4 +347,70 @@ nav .logo {
   font-size: 1rem;
   color: #ffffff;
   margin: 2rem 0 10rem 0;
+}
+
+.fav-destinations {
+  background: linear-gradient(180deg, #f28924 0%, #e0c8b2 100%);
+  height: 80dvh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  padding: 0 8rem 0 8rem;
+  place-items: center;
+}
+.fav-destinations h1 {
+  font-size: 4.4375rem;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: bold;
+  padding: 0 3rem 0 3rem;
+}
+.fav-destinations .carousel {
+  width: 85%;
+}
+.fav-destinations .carousel img {
+  width: 100%;
+  height: 25rem;
+}
+
+.places {
+  background-color: #323D3F;
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding: 0 10rem 0 10rem;
+  grid-template-rows: repeat(3, 1fr);
+  place-items: center;
+  gap: 15rem 2rem;
+}
+.places h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.places h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.places p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.places button {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-family: Verdana;
+  background-color: #2890d5;
+  width: 13.75rem;
+  height: 2.8125rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+}
+.places button:hover {
+  background-color: #2073aa;
+  transition: 0.3s ease;
+}
+.places img {
+  width: 30rem;
+  height: 25rem;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,53 @@
+@import "../../abstracts/mixins";
+@import "../../abstracts/variables";
+
+.fav-destinations {
+    background: $orange-bg-gradient;
+    height: 80dvh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    padding: 0 8rem 0 8rem;
+    place-items: center;
+    h1 {
+        font: {
+            size: toRem(71);
+            family: "Arial", Helvetica, sans-serif;
+            weight: bold;
+        }
+        padding: 0 3rem 0 3rem;
+    }
+    .carousel {
+        width: 85%;
+        img {
+            width: 100%;
+            height: 25rem;
+        }
+    }
+}
+
+.places {
+    background-color: $grey-bg;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    padding: 0 10rem 0 10rem;
+    grid-template-rows: repeat(3, 1fr);
+    place-items: center;
+    gap: 15rem 2rem;
+    h1 {
+        @include white-big-title;
+    }
+    h2 {
+        @include white-small-title;
+    }
+    p {
+        @include normal-white-text;
+    }
+    button {
+        @include blue-button;
+    }
+    img {
+        width: 30rem;
+        height: 25rem;
+    }
+}

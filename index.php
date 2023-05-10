@@ -10,8 +10,8 @@ $pageName = "Domov";
                 <div class="logo">
                     <img src="img/logo.png" alt="">
                 </div>
-                <li><a href="#">Domov</a></li>
-                <li><a href="">Destinácie</a></li>
+                <li><a href="index.php">Domov</a></li>
+                <li><a href="./php-pages/destinations.php">Destinácie</a></li>
                 <li><a href="">First Minute</a></li>
                 <li><a href="">Ďalšie služby</a></li>
                 <li><a href="">Kontakt</a></li>

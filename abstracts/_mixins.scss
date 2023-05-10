@@ -58,6 +58,7 @@
 
 @mixin white-big-title {
     font-size: toRem(48);
+    font-weight: bold;
 }
 
 @mixin white-medium-title {
