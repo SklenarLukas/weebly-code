@@ -18,8 +18,6 @@ $pageName = "Domov";
     </nav>
 
     <div class="main-wrap">
-
-
         <section class="china-title">
             <h1>Čína</h1>
         </section>
@@ -33,7 +31,7 @@ $pageName = "Domov";
                         <p>Socha Sun-c', vlastným menom Wu Sun-a. Bol autorom diela Umenie vojny, veľmi vplyvnej čínskej knihy o vojenskej stratégii. Bol jeden z prvých realistov v teórii medzinárodných vzťahov.</p>
                     </div>
                 </div>
-
+                
                 <div class="culture">
                     <img src="../img/first-minute-img/meal.jpg" class="img-fluid" alt="...">
                     <div>

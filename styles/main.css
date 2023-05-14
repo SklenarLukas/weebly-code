@@ -128,19 +128,16 @@ nav .logo {
   background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1975787020.jpg");
   background-position: bottom;
   background-size: cover;
-  background-repeat: no-repeat;
   /*
   overflow-clip-margin: content-box;
   overflow: clip;
   */
-  background-repeat: no-repeat;
 }
 .main-page h2 {
   font-size: 3rem;
   font-family: Arial;
   font-weight: bold;
   font-style: italic;
-  color: #ffffff;
   -webkit-margin-after: 2rem;
           margin-block-end: 2rem;
 }
@@ -155,7 +152,6 @@ nav .logo {
   text-align: center;
   text-transform: uppercase;
   border: none;
-  display: inline-block;
 }
 .main-page button:hover {
   background-color: #2073aa;
@@ -168,11 +164,11 @@ nav .logo {
   place-items: center;
   height: 88vh;
   */
-  background-color: #323d3f;
+  background-color: #323D3F;
 }
-.services .banner-services h2 {
-  -webkit-padding-before: 5rem;
-          padding-block-start: 5rem;
+.services h2 {
+  -webkit-padding-before: 3.5rem;
+          padding-block-start: 3.5rem;
   color: #f28924;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -201,14 +197,7 @@ nav .logo {
   background-color: #2073aa;
   transition: 0.3s ease;
 }
-.services .services-list {
-  margin: 0 13rem 0 13rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-}
-.services .services-list h2 {
+.services h4 {
   margin-top: 2rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -216,14 +205,15 @@ nav .logo {
 
 .chinese-wall {
   background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1623097286.jpg");
-  height: 75dvh;
+  background-position: bottom;
+  background-size: cover;
+  height: 77dvh;
   display: grid;
-  justify-items: center;
 }
 .chinese-wall .title-field {
   margin-top: 3rem;
-  height: 80%;
-  width: 48%;
+  max-width: 60%;
+  max-height: 80%;
   background-color: rgba(255, 255, 255, 0.9019607843);
 }
 .chinese-wall .title-field .destinations-title {
@@ -292,14 +282,10 @@ nav .logo {
   color: #000000;
   padding: 3rem 0 4rem 0;
 }
-.tools .tools-list {
+.tools .col {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
-  margin: 0 10rem 0 10rem;
-}
-.tools .tools-list .col {
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
   padding: 1.5rem;
   background-color: #ffffff;
   margin-bottom: 5rem;
@@ -307,7 +293,7 @@ nav .logo {
   flex-direction: column;
   justify-self: center;
 }
-.tools .tools-list .col img {
+.tools .col img {
   max-width: 100%;
   height: auto;
   padding: 3rem 0 3rem 0;
@@ -316,8 +302,8 @@ nav .logo {
 
 .reviews {
   background-color: #323D3F;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-items: center;
 }
 .reviews h2 {
   font-size: 2.5rem;
@@ -342,9 +328,6 @@ nav .logo {
   font-family: "Georgia", Times New Roman, Times, serif;
   font-style: italic;
   margin-bottom: 6rem;
-}
-.reviews div {
-  width: 50%;
 }
 .reviews div blockquote {
   font-size: 6.25rem;
@@ -436,39 +419,37 @@ nav .logo {
 
 .fav-destinations {
   background: linear-gradient(180deg, #f28924 0%, #e0c8b2 100%);
-  height: 80dvh;
+  height: 77dvh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-  padding: 0 8rem 0 8rem;
   place-items: center;
 }
 .fav-destinations h1 {
   font-size: 4.4375rem;
   font-family: "Arial", Helvetica, sans-serif;
   font-weight: bold;
-  padding: 0 3rem 0 3rem;
-}
-.fav-destinations .carousel {
-  width: 85%;
 }
 .fav-destinations .carousel img {
-  width: 100%;
-  height: 25rem;
+  height: 20rem;
+}
+.fav-destinations .carousel .carousel-control-prev-icon {
+  background-color: #323D3F;
+  width: 2.5rem;
+  border-radius: 0.3125rem;
+}
+.fav-destinations .carousel .carousel-control-next-icon {
+  background-color: #323D3F;
+  width: 2.5rem;
+  border-radius: 0.3125rem;
 }
 
 .places {
   background-color: #323D3F;
-  display: grid;
-  grid-template-areas: "oman-txt oman-img oman-img" "barca-img barca-img barca-txt" "china-txt china-img china-img";
-  padding: 10rem 18rem 10rem 18rem;
-  place-items: center;
-  gap: 15rem 2rem;
+  padding: 6rem 0 8rem 0;
 }
 .places h1 {
   font-size: 3rem;
   font-weight: bold;
+  margin-bottom: 1rem;
 }
 .places h2 {
   font-size: 2rem;
@@ -477,6 +458,7 @@ nav .logo {
 .places p {
   font-size: 1rem;
   color: #ffffff;
+  margin: 2rem 0 2rem 0;
 }
 .places button {
   color: #ffffff;
@@ -494,41 +476,14 @@ nav .logo {
   background-color: #2073aa;
   transition: 0.3s ease;
 }
-.places img {
-  width: 80%;
-}
-
-.oman-txt {
-  grid-area: oman-txt;
-}
-
-.oman-img {
-  grid-area: oman-img;
-}
-
-.barca-img {
-  grid-area: barca-img;
-}
-
-.barca-txt {
-  grid-area: barca-txt;
-}
-
-.carousel-control-prev-icon {
-  background-color: #323D3F;
-  width: 2.5rem;
-  border-radius: 0.3125rem;
-}
-
-.carousel-control-next-icon {
-  background-color: #323D3F;
-  width: 2.5rem;
-  border-radius: 0.3125rem;
+.places .spacer {
+  margin-bottom: 18rem;
 }
 
 .china-title {
   height: 60dvh;
   background-image: url("https://cdn2.editmysite.com/images/editor/theme-background/stock/Greenhills.jpg");
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
   display: grid;

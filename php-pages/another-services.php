@@ -25,17 +25,17 @@ $pageName = "Domov";
 
                 <div class="row align-items-start">
                     <div class="col">
-                        <img src="../img/another-services-img/flight-tickets.jpg" alt="">
+                        <img src="../img/another-services-img/flight-tickets.jpg" class="img-fluid" alt="...">
                         <h3>Letenky</h3>
                         <p>Nemusíte hľadať a kupovať letenky, vyriešime to za vás.</p>
                     </div>
                     <div class="col">
-                        <img src="../img/another-services-img/hotel.jpg" alt="">
+                        <img src="../img/another-services-img/hotel.jpg" class="img-fluid" alt="...">
                         <h3>Hotel</h3>
                         <p>Objednáme vám hotel.</p>
                     </div>
                     <div class="col">
-                        <img src="../img/another-services-img/guide.jpg" alt="">
+                        <img src="../img/another-services-img/guide.jpg" class="img-fluid" alt="...">
                         <h3>Sprievodca</h3>
                         <p>Môžete využiť služby súkromného sprievodcu.</p>
                     </div>

@@ -26,12 +26,10 @@ nav {
     //background-attachment: fixed;
     background-position: bottom;
     background-size: cover;
-    background-repeat: no-repeat;
     /*
     overflow-clip-margin: content-box;
     overflow: clip;
     */
-    background-repeat: no-repeat;
     h2 {
         font: {
             size: toRem(48);
@@ -39,12 +37,11 @@ nav {
             weight: bold;
             style: italic;
         }
-        color: $white-text;
         margin-block-end: 2rem;
     }
     button {
         @include blue-button;
-        display: inline-block; //idk, test
+        //display: inline-block; //idk, test
     }
 }
 
@@ -54,9 +51,9 @@ nav {
     place-items: center;
     height: 88vh;
     */
-    background-color: #323d3f;
-    .banner-services h2 {
-        padding-block-start: 5rem;
+    background-color: $grey-bg;
+    h2 {
+        padding-block-start: 3.5rem;
         @include orange-text;
     }
     h3 {
@@ -67,27 +64,23 @@ nav {
         @include blue-button;
         margin-block-start: 2rem;
     }
-    .services-list {
-        margin: 0 13rem 0 13rem;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 2rem;
-        h2 {
-            margin-top: 2rem;
-            @include white-under-img-title;
-        }
+
+    h4 {
+        margin-top: 2rem;
+        @include white-under-img-title;
     }
 }
 
 .chinese-wall {
     background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1623097286.jpg");
-    height: 75dvh;
+    background-position: bottom;
+    background-size: cover;
+    height: 77dvh;
     display: grid;
-    justify-items: center;
     .title-field {
         margin-top: 3rem;
-        height: 80%;
-        width: 48%;
+        max-width: 60%;
+        max-height: 80%;
         background-color: $white-opacity-bg;
         .destinations-title {
             @include orange-text;
@@ -133,32 +126,32 @@ nav {
         @include normal-black-text;
         padding: 3rem 0 4rem 0;
     }
-    .tools-list {
+
+    .row {
+       // display: grid;
+    }
+    .col {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 4rem;
-        margin: 0 10rem 0 10rem;
-        .col {
-            padding: 1.5rem;
-            background-color: $white-background;
-            margin-bottom: 5rem;
-            display: flex;
-            flex-direction: column;
-            justify-self: center;
-            img {
-                max-width: 100%;
-                height: auto;
-                padding: 3rem 0 3rem 0;
-                align-self: center;
-            }
+        column-gap: 5rem;
+        padding: 1.5rem;
+        background-color: $white-background;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        img {
+            max-width: 100%;
+            height: auto;
+            padding: 3rem 0 3rem 0;
+            align-self: center;
         }
     }
 }
 
 .reviews {
     background-color: $grey-bg;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-items: center;
     h2 {
         @include white-medium-title;
         padding: 2.5rem 0 2.5rem 0;
@@ -179,7 +172,6 @@ nav {
         margin-bottom: 6rem;
     }
     div {
-        width: 50%;
         blockquote {
             font: {
                 size: toRem(100);
