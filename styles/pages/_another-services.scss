@@ -1,0 +1,56 @@
+@import "../../abstracts/variables";
+@import "../../abstracts/mixins";
+
+.main-wrap {
+    width: 100%;
+   // padding: toRem(50);
+  
+}
+
+.container {
+    width: 100%;
+    max-width: toRem(1170);
+    padding: 0 1rem 0 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.main-wrap .container {
+    padding: 50px;
+    box-sizing: border-box;
+}
+.our-services {
+    background: $grey-bg;
+    padding: 8rem 3rem 8rem 3rem;
+    h2 {
+        @include orange-text;
+    }
+    h1 {
+        @include white-big-title;
+    }
+    h3 {
+        @include orange-text;
+        text-transform: none;
+        margin: 2rem 0 2rem 0;
+    }
+    p {
+        @include normal-white-text;
+    }
+}
+
+.call-us {
+    background: $orange-bg-gradient;
+    h1 {
+        @include white-big-title;
+        margin: 4rem 0 3rem 0;
+    }
+    p {
+        @include normal-white-text;
+        font-size: toRem(18);
+        margin-bottom: 4.25rem
+    }
+    button {
+        @include blue-button;
+        margin-bottom: 2rem;
+    }
+}

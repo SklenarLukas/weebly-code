@@ -21,9 +21,17 @@ nav {
 .main-page {
     display: grid;
     place-items: center;
-    height: 74dvh;
+    height: 75dvh;
     background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1975787020.jpg");
+    //background-attachment: fixed;
+    background-position: bottom;
     background-size: cover;
+    background-repeat: no-repeat;
+    /*
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    */
+    background-repeat: no-repeat;
     h2 {
         font: {
             size: toRem(48);
@@ -138,6 +146,8 @@ nav {
             flex-direction: column;
             justify-self: center;
             img {
+                max-width: 100%;
+                height: auto;
                 padding: 3rem 0 3rem 0;
                 align-self: center;
             }

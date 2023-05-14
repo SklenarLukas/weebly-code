@@ -124,9 +124,16 @@ nav .logo {
 .main-page {
   display: grid;
   place-items: center;
-  height: 74dvh;
+  height: 75dvh;
   background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1975787020.jpg");
+  background-position: bottom;
   background-size: cover;
+  background-repeat: no-repeat;
+  /*
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  */
+  background-repeat: no-repeat;
 }
 .main-page h2 {
   font-size: 3rem;
@@ -301,6 +308,8 @@ nav .logo {
   justify-self: center;
 }
 .tools .tools-list .col img {
+  max-width: 100%;
+  height: auto;
   padding: 3rem 0 3rem 0;
   align-self: center;
 }
@@ -349,6 +358,82 @@ nav .logo {
   margin: 2rem 0 10rem 0;
 }
 
+.main-wrap {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 73.125rem;
+  padding: 0 1rem 0 1rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.main-wrap .container {
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.our-services {
+  background: #323D3F;
+  padding: 8rem 3rem 8rem 3rem;
+}
+.our-services h2 {
+  color: #f28924;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.our-services h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.our-services h3 {
+  color: #f28924;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: none;
+  margin: 2rem 0 2rem 0;
+}
+.our-services p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.call-us {
+  background: linear-gradient(180deg, #f28924 0%, #e0c8b2 100%);
+}
+.call-us h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 4rem 0 3rem 0;
+}
+.call-us p {
+  font-size: 1rem;
+  color: #ffffff;
+  font-size: 1.125rem;
+  margin-bottom: 4.25rem;
+}
+.call-us button {
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-family: Verdana;
+  background-color: #2890d5;
+  width: 13.75rem;
+  height: 2.8125rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  margin-bottom: 2rem;
+}
+.call-us button:hover {
+  background-color: #2073aa;
+  transition: 0.3s ease;
+}
+
 .fav-destinations {
   background: linear-gradient(180deg, #f28924 0%, #e0c8b2 100%);
   height: 80dvh;
@@ -376,9 +461,8 @@ nav .logo {
 .places {
   background-color: #323D3F;
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  padding: 0 10rem 0 10rem;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "oman-txt oman-img oman-img" "barca-img barca-img barca-txt" "china-txt china-img china-img";
+  padding: 10rem 18rem 10rem 18rem;
   place-items: center;
   gap: 15rem 2rem;
 }
@@ -411,6 +495,118 @@ nav .logo {
   transition: 0.3s ease;
 }
 .places img {
-  width: 30rem;
-  height: 25rem;
+  width: 80%;
+}
+
+.oman-txt {
+  grid-area: oman-txt;
+}
+
+.oman-img {
+  grid-area: oman-img;
+}
+
+.barca-img {
+  grid-area: barca-img;
+}
+
+.barca-txt {
+  grid-area: barca-txt;
+}
+
+.carousel-control-prev-icon {
+  background-color: #323D3F;
+  width: 2.5rem;
+  border-radius: 0.3125rem;
+}
+
+.carousel-control-next-icon {
+  background-color: #323D3F;
+  width: 2.5rem;
+  border-radius: 0.3125rem;
+}
+
+.china-title {
+  height: 60dvh;
+  background-image: url("https://cdn2.editmysite.com/images/editor/theme-background/stock/Greenhills.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  display: grid;
+  place-items: center;
+}
+.china-title h1 {
+  font-size: 4.4375rem;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.img-text {
+  background-color: #323D3F;
+  padding-top: 2rem;
+}
+
+.culture {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.culture img {
+  margin-right: 5rem;
+}
+.culture h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.culture p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.summer-destinations {
+  background: linear-gradient(180deg, #f28924 0%, #e0c8b2 100%);
+  padding-bottom: 8rem;
+}
+.summer-destinations h2 {
+  color: #f28924;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.summer-destinations h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.summer-destinations p {
+  font-size: 1.125rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+
+.contact-us {
+  background: #323D3F;
+}
+.contact-us h1 {
+  margin: 7rem 0 6rem 0;
+  font-size: 4.4375rem;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-weight: bold;
+}
+.contact-us h3 {
+  color: #f28924;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: none;
+  margin-bottom: 2rem;
+}
+.contact-us p {
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+
+iframe {
+  width: 100%;
+  margin: 8rem 0 8rem 0;
 }/*# sourceMappingURL=main.css.map */
