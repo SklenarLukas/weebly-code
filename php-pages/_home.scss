@@ -1,6 +1,5 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
-// @import '../abstracts/reset';
 
 * {
     margin: 0;
@@ -23,13 +22,8 @@ nav {
     place-items: center;
     height: 75dvh;
     background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1975787020.jpg");
-    //background-attachment: fixed;
     background-position: bottom;
     background-size: cover;
-    /*
-    overflow-clip-margin: content-box;
-    overflow: clip;
-    */
     h2 {
         font: {
             size: toRem(48);
@@ -41,16 +35,11 @@ nav {
     }
     button {
         @include blue-button;
-        //display: inline-block; //idk, test
     }
 }
 
 .services {
-    height: 80dvh;
-    /* display: grid;
-    place-items: center;
-    height: 88vh;
-    */
+    height: 90h;
     background-color: $grey-bg;
     h2 {
         padding-block-start: 3.5rem;
@@ -62,7 +51,7 @@ nav {
     }
     button {
         @include blue-button;
-        margin-block-start: 2rem;
+        margin: 2.5rem 0 5rem 0;
     }
 
     h4 {
@@ -75,29 +64,29 @@ nav {
     background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1623097286.jpg");
     background-position: bottom;
     background-size: cover;
-    height: 77dvh;
+    width: 100%;
+    height: 88dvh;
     display: grid;
     .title-field {
         margin-top: 3rem;
-        max-width: 60%;
-        max-height: 80%;
+        max-width: 55%;
+        height: 80%;
         background-color: $white-opacity-bg;
         .destinations-title {
             @include orange-text;
-            margin-top: 4rem;
         }
         h2 {
             @include white-medium-title;
             color: $black-text;
-            margin: 3rem 0 3rem 0;
+            margin: 2.5rem 0 2.5rem 0;
         }
         p {
             color: $grey-text;
-            padding: 0 7rem 0 7rem;
+            padding: 0 4rem 0 4rem;
         }
         button {
             @include blue-button;
-            margin-top: 3rem;
+            margin-top: 5rem;
         }
     }
 }
@@ -106,11 +95,11 @@ nav {
     background-color: $grey-bg;
     h2 {
         @include white-medium-title;
-        padding: 2.5rem 0 2.5rem 0;
+        padding: 2.4rem 0 2.4rem 0;
     }
     h4 {
         @include orange-text;
-        padding-top: 5rem;
+        padding-top: 1rem;
     }
     h5 {
         @include normal-black-text;
@@ -124,41 +113,30 @@ nav {
     }
     p {
         @include normal-black-text;
-        padding: 3rem 0 4rem 0;
-    }
-
-    .row {
-       // display: grid;
+        padding: 3rem 0 5rem 0;
     }
     .col {
         display: grid;
-        column-gap: 5rem;
-        padding: 1.5rem;
+        margin: 1rem;
         background-color: $white-background;
         margin-bottom: 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
         img {
-            max-width: 100%;
-            height: auto;
-            padding: 3rem 0 3rem 0;
-            align-self: center;
+            padding: 4rem 0 3rem 0;
+            justify-self: center;
         }
     }
 }
 
 .reviews {
     background-color: $grey-bg;
-    display: flex;
-    justify-items: center;
+    display: grid;
+    place-items: center;
     h2 {
         @include white-medium-title;
         padding: 2.5rem 0 2.5rem 0;
     }
     h4 {
         @include orange-text;
-        padding-top: 5rem;
     }
     h5 {
         @include normal-black-text;
@@ -167,15 +145,17 @@ nav {
     }
     h6 {
         font-size: toRem(22);
+        line-height: toRem(31);
         font-family: "Georgia", Times New Roman, Times, serif;
         font-style: italic;
         margin-bottom: 6rem;
     }
-    div {
+    .reviews-text {
+        padding: 0 10rem 0 10rem;
         blockquote {
             font: {
                 size: toRem(100);
-                family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; //tu sa musim pohrať s fontom
+                family: "Poppins"; //tu sa musim pohrať s fontom
             }
             text-align: left;
             margin-left: -4rem;
@@ -184,5 +164,10 @@ nav {
     p {
         @include normal-white-text;
         margin: 2rem 0 10rem 0;
+    }
+    .stars {
+        display: grid;
+        justify-content: center;
+        align-items: center;
     }
 }
