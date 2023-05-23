@@ -1,8 +1,7 @@
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -44,9 +43,9 @@ img {
 }
 
 button,
-input[type='button'],
-input[type='reset'],
-input[type='submit'] {
+input[type=button],
+input[type=reset],
+input[type=submit] {
   background-color: transparent;
   border: none;
   color: inherit;
@@ -55,10 +54,10 @@ input[type='submit'] {
   text-align: inherit;
 }
 
-input[type='checkbox'],
-input[type='radio'],
-input[type='file'],
-input[type='range'],
+input[type=checkbox],
+input[type=radio],
+input[type=file],
+input[type=range],
 select {
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -83,312 +82,10 @@ ol ul {
   margin: 0;
   padding: 0;
 }
-
 * body {
   font-family: "Verdana", Geneva, Tahoma, sans-serif;
   color: #ffffff;
   text-align: center;
-}
-
-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 7.5rem;
-}
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-  place-items: center;
-  margin-left: 12.5rem;
-}
-
-nav a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-decoration: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Verdana", Geneva, Tahoma, sans-serif;
-  color: #4f4f4e;
-  font-weight: bold;
-  -webkit-margin-end: 1rem;
-          margin-inline-end: 1rem;
-  font-size: 1.125rem;
-}
-
-nav a:hover {
-  color: #2890d5;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-nav a:focus {
-  color: #2890d5;
-}
-
-nav .logo {
-  -webkit-margin-end: 3rem;
-          margin-inline-end: 3rem;
-}
-
-.main-page {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  height: 75dvh;
-  background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1975787020.jpg");
-  background-position: bottom;
-  background-size: cover;
-}
-
-.main-page h2 {
-  font-size: 3rem;
-  font-family: Arial;
-  font-weight: bold;
-  font-style: italic;
-  -webkit-margin-after: 2rem;
-          margin-block-end: 2rem;
-}
-
-.main-page button {
-  color: #ffffff;
-  font-size: 0.875rem;
-  font-weight: bold;
-  font-family: Verdana;
-  background-color: #2890d5;
-  width: 13.75rem;
-  height: 2.8125rem;
-  text-align: center;
-  text-transform: uppercase;
-  border: none;
-}
-
-.main-page button:hover {
-  background-color: #2073aa;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.services {
-  height: 90h;
-  background-color: #323D3F;
-}
-
-.services h2 {
-  -webkit-padding-before: 3.5rem;
-          padding-block-start: 3.5rem;
-  color: #f28924;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.services h3 {
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 4rem 0 4rem 0;
-}
-
-.services button {
-  color: #ffffff;
-  font-size: 0.875rem;
-  font-weight: bold;
-  font-family: Verdana;
-  background-color: #2890d5;
-  width: 13.75rem;
-  height: 2.8125rem;
-  text-align: center;
-  text-transform: uppercase;
-  border: none;
-  margin: 2.5rem 0 5rem 0;
-}
-
-.services button:hover {
-  background-color: #2073aa;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.services h4 {
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.chinese-wall {
-  background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1623097286.jpg");
-  background-position: bottom;
-  background-size: cover;
-  width: 100%;
-  height: 88dvh;
-  display: -ms-grid;
-  display: grid;
-}
-
-.chinese-wall .title-field {
-  margin-top: 3rem;
-  max-width: 55%;
-  height: 80%;
-  background-color: #ffffffe6;
-}
-
-.chinese-wall .title-field .destinations-title {
-  color: #f28924;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.chinese-wall .title-field h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #000000;
-  margin: 2.5rem 0 2.5rem 0;
-}
-
-.chinese-wall .title-field p {
-  color: #3f3f3f;
-  padding: 0 4rem 0 4rem;
-}
-
-.chinese-wall .title-field button {
-  color: #ffffff;
-  font-size: 0.875rem;
-  font-weight: bold;
-  font-family: Verdana;
-  background-color: #2890d5;
-  width: 13.75rem;
-  height: 2.8125rem;
-  text-align: center;
-  text-transform: uppercase;
-  border: none;
-  margin-top: 5rem;
-}
-
-.chinese-wall .title-field button:hover {
-  background-color: #2073aa;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-
-.tools {
-  background-color: #323D3F;
-}
-
-.tools h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  padding: 2.4rem 0 2.4rem 0;
-}
-
-.tools h4 {
-  color: #f28924;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding-top: 1rem;
-}
-
-.tools h5 {
-  font-size: 1rem;
-  color: #000000;
-  color: #3f3f3f;
-  font-weight: bold;
-}
-
-.tools h6 {
-  font-size: 1.125rem;
-  font-weight: bold;
-  padding-bottom: 2.5rem;
-}
-
-.tools p {
-  font-size: 1rem;
-  color: #000000;
-  padding: 3rem 0 5rem 0;
-}
-
-.tools .col {
-  display: -ms-grid;
-  display: grid;
-  margin: 1rem;
-  background-color: #ffffff;
-  margin-bottom: 5rem;
-}
-
-.tools .col img {
-  padding: 4rem 0 3rem 0;
-  -ms-grid-column-align: center;
-      justify-self: center;
-}
-
-.reviews {
-  background-color: #323D3F;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
-.reviews h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  padding: 2.5rem 0 2.5rem 0;
-}
-
-.reviews h4 {
-  color: #f28924;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.reviews h5 {
-  font-size: 1rem;
-  color: #000000;
-  color: #3f3f3f;
-  font-weight: bold;
-}
-
-.reviews h6 {
-  font-size: 1.375rem;
-  line-height: 1.9375rem;
-  font-family: "Georgia", Times New Roman, Times, serif;
-  font-style: italic;
-  margin-bottom: 6rem;
-}
-
-.reviews .reviews-text {
-  padding: 0 10rem 0 10rem;
-}
-
-.reviews .reviews-text blockquote {
-  font-size: 6.25rem;
-  font-family: "Poppins";
-  text-align: left;
-  margin-left: -4rem;
-}
-
-.reviews p {
-  font-size: 1rem;
-  color: #ffffff;
-  margin: 2rem 0 10rem 0;
-}
-
-.reviews .stars {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .main-wrap {
@@ -400,33 +97,293 @@ nav .logo {
   max-width: 73.125rem;
   padding: 0 1rem 0 1rem;
   margin: 0 auto;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .main-wrap .container {
   padding: 50px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  height: 7.5rem;
+  transition: 0.5s;
+  z-index: 1;
+}
+header ul {
+  display: flex;
+  place-items: center;
+}
+header ul li {
+  list-style: none;
+}
+header ul li a {
+  text-decoration: none;
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  color: #4f4f4e;
+  font-weight: bold;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
+  font-size: 1.125rem;
+}
+header ul li a:hover {
+  color: #2890d5;
+  transition: 0.3s ease;
+}
+header ul li a:focus {
+  color: #2890d5;
+}
+header ul .logo {
+  -webkit-margin-end: 4rem;
+          margin-inline-end: 4rem;
+}
+header a:is(:active, :visited, :link).active {
+  color: #2890d5;
+}
+
+.sticky {
+  height: 5rem;
+}
+
+.main-page {
+  margin-top: 7.5rem;
+  display: grid;
+  place-items: center;
+  height: 75dvh;
+  background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1975787020.jpg");
+  background-position: bottom;
+  background-size: cover;
+}
+.main-page h2 {
+  font-size: 3rem;
+  font-family: Arial;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 0.09375rem;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+.main-page button {
+  color: #ffffff;
+  padding: 0 2rem 0 2rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-family: Verdana;
+  background-color: #2890d5;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2.8125rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+}
+.main-page button:hover {
+  background-color: #2073aa;
+  transition: 0.3s ease;
+}
+
+.services {
+  height: 90h;
+  background-color: #323D3F;
+}
+.services h2 {
+  -webkit-padding-before: 3.5rem;
+          padding-block-start: 3.5rem;
+  color: #f28924;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.services h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 4rem 0 4rem 0;
+}
+.services button {
+  color: #ffffff;
+  padding: 0 2rem 0 2rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-family: Verdana;
+  background-color: #2890d5;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2.8125rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  margin: 2.5rem 0 5rem 0;
+}
+.services button:hover {
+  background-color: #2073aa;
+  transition: 0.3s ease;
+}
+.services h4 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.chinese-wall {
+  background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1623097286.jpg");
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  height: 75dvh;
+  display: grid;
+}
+.chinese-wall .title-field {
+  margin-top: 3rem;
+  max-width: 40%;
+  height: 75%;
+  background-color: rgba(255, 255, 255, 0.9019607843);
+}
+.chinese-wall .title-field .destinations-title {
+  color: #f28924;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.chinese-wall .title-field h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 2.25rem 0 2.5rem 0;
+}
+.chinese-wall .title-field p {
+  color: #3f3f3f;
+  padding: 0 4rem 0 4rem;
+}
+.chinese-wall .title-field button {
+  color: #ffffff;
+  padding: 0 2rem 0 2rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  font-family: Verdana;
+  background-color: #2890d5;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2.8125rem;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 5rem;
+}
+.chinese-wall .title-field button:hover {
+  background-color: #2073aa;
+  transition: 0.3s ease;
+}
+
+.tools {
+  background-color: #323D3F;
+}
+.tools h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2.4rem 0 2.4rem 0;
+}
+.tools h4 {
+  color: #f28924;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+.tools h5 {
+  font-size: 1rem;
+  color: #000000;
+  color: #3f3f3f;
+  font-weight: bold;
+}
+.tools h6 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  padding-bottom: 2.5rem;
+}
+.tools p {
+  font-size: 1rem;
+  color: #000000;
+  padding: 3rem 0 5rem 0;
+}
+.tools .col {
+  display: grid;
+  margin: 1rem;
+  background-color: #ffffff;
+  margin-bottom: 5rem;
+}
+.tools .col a {
+  padding: 4rem 0 3rem 0;
+  justify-self: center;
+}
+
+.reviews {
+  background-color: #323D3F;
+  display: grid;
+  place-items: center;
+}
+.reviews h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 2.5rem 0 2.5rem 0;
+}
+.reviews h4 {
+  color: #f28924;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.reviews h5 {
+  font-size: 1rem;
+  color: #000000;
+  color: #3f3f3f;
+  font-weight: bold;
+}
+.reviews h6 {
+  font-size: 1.375rem;
+  line-height: 1.9375rem;
+  font-family: "Georgia", Times New Roman, Times, serif;
+  font-style: italic;
+  margin-bottom: 6rem;
+}
+.reviews .reviews-text {
+  padding: 0 10rem 0 10rem;
+}
+.reviews .reviews-text blockquote {
+  margin: 2.5rem 0 1.5rem -4rem;
+}
+.reviews p {
+  font-size: 1rem;
+  color: #ffffff;
+  margin: 2rem 0 10rem 0;
+}
+.reviews .stars {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .our-services {
   background: #323D3F;
   padding: 8rem 3rem 8rem 3rem;
 }
-
 .our-services h2 {
   color: #f28924;
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: bold;
 }
-
 .our-services h1 {
   font-size: 3rem;
   font-weight: bold;
 }
-
 .our-services h3 {
   color: #f28924;
   text-transform: uppercase;
@@ -435,75 +392,64 @@ nav .logo {
   text-transform: none;
   margin: 2rem 0 2rem 0;
 }
-
 .our-services p {
   font-size: 1rem;
   color: #ffffff;
 }
 
 .call-us {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f28924), to(#e0c8b2));
   background: linear-gradient(180deg, #f28924 0%, #e0c8b2 100%);
 }
-
 .call-us h1 {
   font-size: 3rem;
   font-weight: bold;
   margin: 4rem 0 3rem 0;
 }
-
 .call-us p {
   font-size: 1rem;
   color: #ffffff;
   font-size: 1.125rem;
   margin-bottom: 4.25rem;
 }
-
 .call-us button {
   color: #ffffff;
+  padding: 0 2rem 0 2rem;
   font-size: 0.875rem;
   font-weight: bold;
   font-family: Verdana;
   background-color: #2890d5;
-  width: 13.75rem;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 2.8125rem;
   text-align: center;
   text-transform: uppercase;
   border: none;
   margin-bottom: 2rem;
 }
-
 .call-us button:hover {
   background-color: #2073aa;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
 
 .fav-destinations {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f28924), to(#e0c8b2));
   background: linear-gradient(180deg, #f28924 0%, #e0c8b2 100%);
   height: 77dvh;
-  display: -ms-grid;
   display: grid;
   place-items: center;
 }
-
 .fav-destinations h1 {
   font-size: 4.4375rem;
   font-family: "Arial", Helvetica, sans-serif;
   font-weight: bold;
 }
-
 .fav-destinations .carousel img {
   height: 20rem;
 }
-
 .fav-destinations .carousel .carousel-control-prev-icon {
   background-color: #323D3F;
   width: 2.5rem;
   border-radius: 0.3125rem;
 }
-
 .fav-destinations .carousel .carousel-control-next-icon {
   background-color: #323D3F;
   width: 2.5rem;
@@ -514,43 +460,38 @@ nav .logo {
   background-color: #323D3F;
   padding: 6rem 0 8rem 0;
 }
-
 .places h1 {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
 }
-
 .places h2 {
   font-size: 2rem;
   font-weight: bold;
 }
-
 .places p {
   font-size: 1rem;
   color: #ffffff;
   margin: 2rem 0 2rem 0;
 }
-
 .places button {
   color: #ffffff;
+  padding: 0 2rem 0 2rem;
   font-size: 0.875rem;
   font-weight: bold;
   font-family: Verdana;
   background-color: #2890d5;
-  width: 13.75rem;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 2.8125rem;
   text-align: center;
   text-transform: uppercase;
   border: none;
 }
-
 .places button:hover {
   background-color: #2073aa;
-  -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
 }
-
 .places .spacer {
   margin-bottom: 18rem;
 }
@@ -561,11 +502,9 @@ nav .logo {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  display: -ms-grid;
   display: grid;
   place-items: center;
 }
-
 .china-title h1 {
   font-size: 4.4375rem;
   font-family: Arial;
@@ -579,35 +518,26 @@ nav .logo {
 
 .culture {
   text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 5rem;
 }
-
 .culture img {
   margin-right: 5rem;
 }
-
 .culture h2 {
   font-size: 2.5rem;
   font-weight: bold;
 }
-
 .culture p {
   font-size: 1rem;
   color: #ffffff;
 }
 
 .summer-destinations {
-  background: -webkit-gradient(linear, left top, left bottom, from(#f28924), to(#e0c8b2));
   background: linear-gradient(180deg, #f28924 0%, #e0c8b2 100%);
   padding-bottom: 8rem;
 }
-
 .summer-destinations h2 {
   color: #f28924;
   text-transform: uppercase;
@@ -615,12 +545,10 @@ nav .logo {
   font-weight: bold;
   color: #ffffff;
 }
-
 .summer-destinations h1 {
   font-size: 3rem;
   font-weight: bold;
 }
-
 .summer-destinations p {
   font-size: 1.125rem;
   font-weight: bold;
@@ -630,14 +558,12 @@ nav .logo {
 .contact-us {
   background: #323D3F;
 }
-
 .contact-us h1 {
   margin: 7rem 0 6rem 0;
   font-size: 4.4375rem;
   font-family: "Arial", Helvetica, sans-serif;
   font-weight: bold;
 }
-
 .contact-us h3 {
   color: #f28924;
   text-transform: uppercase;
@@ -646,7 +572,6 @@ nav .logo {
   text-transform: none;
   margin-bottom: 2rem;
 }
-
 .contact-us p {
   font-size: 1.25rem;
   color: #ffffff;
@@ -655,5 +580,4 @@ nav .logo {
 iframe {
   width: 100%;
   margin: 8rem 0 8rem 0;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

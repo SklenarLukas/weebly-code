@@ -1,24 +1,6 @@
 @import "../../abstracts/variables";
 @import "../../abstracts/mixins";
 
-.main-wrap {
-    width: 100%;
-   // padding: toRem(50);
-  
-}
-
-.container {
-    width: 100%;
-    max-width: toRem(1170);
-    padding: 0 1rem 0 1rem;
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-.main-wrap .container {
-    padding: 50px;
-    box-sizing: border-box;
-}
 .our-services {
     background: $grey-bg;
     padding: 8rem 3rem 8rem 3rem;

@@ -11,13 +11,71 @@
     }
 }
 
-nav {
+.main-wrap {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: toRem(1170);
+    padding: 0 1rem 0 1rem;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.main-wrap .container {
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white-background;
     height: toRem(120);
-    @include nav-style;
+    transition: 0.5s;
+    z-index: 1;
+    ul {
+        display: flex;
+        place-items: center;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                font-family: "Verdana", Geneva, Tahoma, sans-serif;
+                color: $nav-text-black;
+                font-weight: bold;
+                margin-inline-end: 1rem;
+                font-size: toRem(18);
+                &:hover {
+                    color: $blue-nav-hover;
+                    transition: 0.3s ease;
+                }
+                &:focus {
+                    color: $blue-btn-bg;
+                }
+            }
+        }
+        .logo {
+            margin-inline-end: 4rem;
+        }
+    }
+    a:is(:active, :visited, :link).active {
+        color: $blue-nav-hover;
+    }
+}
+
+.sticky {
+    height: toRem(80);
 }
 
 .main-page {
+    margin-top: toRem(120);
     display: grid;
     place-items: center;
     height: 75dvh;
@@ -31,6 +89,7 @@ nav {
             weight: bold;
             style: italic;
         }
+        letter-spacing: toRem(1.5);
         margin-block-end: 2rem;
     }
     button {
@@ -65,12 +124,12 @@ nav {
     background-position: bottom;
     background-size: cover;
     width: 100%;
-    height: 88dvh;
+    height: 75dvh;
     display: grid;
     .title-field {
         margin-top: 3rem;
-        max-width: 55%;
-        height: 80%;
+        max-width: 40%;
+        height: 75%;
         background-color: $white-opacity-bg;
         .destinations-title {
             @include orange-text;
@@ -78,7 +137,7 @@ nav {
         h2 {
             @include white-medium-title;
             color: $black-text;
-            margin: 2.5rem 0 2.5rem 0;
+            margin: 2.25rem 0 2.5rem 0;
         }
         p {
             color: $grey-text;
@@ -120,7 +179,7 @@ nav {
         margin: 1rem;
         background-color: $white-background;
         margin-bottom: 5rem;
-        img {
+        a {
             padding: 4rem 0 3rem 0;
             justify-self: center;
         }
@@ -153,12 +212,7 @@ nav {
     .reviews-text {
         padding: 0 10rem 0 10rem;
         blockquote {
-            font: {
-                size: toRem(100);
-                family: "Poppins"; //tu sa musim pohrať s fontom
-            }
-            text-align: left;
-            margin-left: -4rem;
+            margin: 2.5rem 0 1.5rem -4rem;
         }
     }
     p {

@@ -1,21 +1,23 @@
 <?php
+$pageName = "First Minute";
 include '../inc/header.php';
-$pageName = "Domov";
 ?>
 
 <body>
-    <nav>
-        <ul>
-            <div class="logo">
-                <img src="../img/logo.png" alt="">
-            </div>
-            <li><a href="../index.php">Domov</a></li>
-            <li><a href="../php-pages/destinations.php">Destinácie</a></li>
-            <li><a href="../php-pages/first-minute.php">First Minute</a></li>
-            <li><a href="../php-pages/another-services.php">Ďalšie služby</a></li>
-            <li><a href="../php-pages/contact.php">Kontakt</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="container">
+            <ul>
+                <div class="logo">
+                    <img src="../img/logo.png" alt="">
+                </div>
+                <li><a href="../index.php">Domov</a></li>
+                <li><a href="../php-pages/destinations.php">Destinácie</a></li>
+                <li><a href="../php-pages/first-minute.php">First Minute</a></li>
+                <li><a href="../php-pages/another-services.php">Ďalšie služby</a></li>
+                <li><a href="../php-pages/contact.php">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="main-wrap">
         <section class="china-title">
@@ -31,7 +33,7 @@ $pageName = "Domov";
                         <p>Socha Sun-c', vlastným menom Wu Sun-a. Bol autorom diela Umenie vojny, veľmi vplyvnej čínskej knihy o vojenskej stratégii. Bol jeden z prvých realistov v teórii medzinárodných vzťahov.</p>
                     </div>
                 </div>
-                
+
                 <div class="culture">
                     <img src="../img/first-minute-img/meal.jpg" class="img-fluid" alt="...">
                     <div>
@@ -63,11 +65,4 @@ $pageName = "Domov";
                     </div>
                 </div>
             </div>
-        </section>
-
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
-
-</html>
+            <?php include '../inc/footer.php'; ?>

@@ -2,13 +2,14 @@
 
 @mixin blue-button {
     color: $white-text;
+    padding: 0 2rem 0 2rem;
     font: {
         size: toRem(14);
         weight: bold;
         family: Verdana;
     }
     background-color: $blue-btn-bg;
-    width: toRem(220);
+    width: fit-content;
     height: toRem(45);
     text-align: center;
     text-transform: uppercase;
@@ -16,36 +17,6 @@
     &:hover {
         background-color: $blue-btn-hover;
         transition: 0.3s ease;
-    }
-}
-
-@mixin nav-style {
-    ul {
-        display: flex;
-        list-style: none;
-        place-items: center;
-        margin-left: toRem(200);
-    }
-    a {
-        display: flex;
-        text-decoration: none;
-        justify-content: center;
-        font-family: "Verdana", Geneva, Tahoma, sans-serif;
-        color: $nav-text-black;
-        font-weight: bold;
-        margin-inline-end: 1rem;
-        font-size: toRem(18);
-        &:hover {
-            color: $blue-nav-hover;
-            transition: 0.3s ease;
-        }
-        &:focus {
-            //test len
-            color: $blue-btn-bg;
-        }
-    }
-    .logo {
-        margin-inline-end: 3rem;
     }
 }
 
