@@ -6,7 +6,8 @@
     height: 77dvh;
     display: grid;
     place-items: center;
-    h1 {
+    margin-top: toRem(120);
+    h6 {
         font: {
             size: toRem(71);
             family: "Arial", Helvetica, sans-serif;
@@ -19,14 +20,12 @@
         }
         .carousel-control-prev-icon {
             background-color: $grey-bg;
-            //height: 2.125rem;
             width: 2.5rem;
             border-radius: toRem(5);
         }
 
         .carousel-control-next-icon {
             background-color: $grey-bg;
-            //height: 2.125rem;
             width: 2.5rem;
             border-radius: toRem(5);
         }
@@ -37,20 +36,16 @@
     background-color: $grey-bg;
     padding: 6rem 0 8rem 0;
     h1 {
-        @include white-big-title;
         margin-bottom: 1rem;
-    }
-    h2 {
-        @include white-small-title;
     }
     p {
         @include normal-white-text;
         margin: 2rem 0 2rem 0;
     }
-    button {
-        @include blue-button;
-    }
     .spacer {
         margin-bottom: 18rem;
+    }
+    button {
+        @include blue-button;
     }
 }

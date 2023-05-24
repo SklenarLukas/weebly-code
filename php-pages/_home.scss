@@ -28,6 +28,19 @@
     box-sizing: border-box;
 }
 
+h1 {
+    @include white-big-title;
+}
+h2 {
+    @include orange-text;
+}
+h3 {
+    @include white-medium-title;
+}
+h4 {
+    @include white-small-title;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -39,7 +52,7 @@ header {
     background-color: $white-background;
     height: toRem(120);
     transition: 0.5s;
-    z-index: 1;
+    z-index: 99;
     ul {
         display: flex;
         place-items: center;
@@ -65,7 +78,7 @@ header {
             margin-inline-end: 4rem;
         }
     }
-    a:is(:active, :visited, :link).active {
+    a:is(:active, :link, :visited).active {
         color: $blue-nav-hover;
     }
 }
@@ -82,7 +95,7 @@ header {
     background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1975787020.jpg");
     background-position: bottom;
     background-size: cover;
-    h2 {
+    h6 {
         font: {
             size: toRem(48);
             family: Arial;
@@ -102,10 +115,8 @@ header {
     background-color: $grey-bg;
     h2 {
         padding-block-start: 3.5rem;
-        @include orange-text;
     }
-    h3 {
-        @include white-small-title;
+    h4 {
         margin: 4rem 0 4rem 0;
     }
     button {
@@ -113,7 +124,7 @@ header {
         margin: 2.5rem 0 5rem 0;
     }
 
-    h4 {
+    h5 {
         margin-top: 2rem;
         @include white-under-img-title;
     }
@@ -134,8 +145,7 @@ header {
         .destinations-title {
             @include orange-text;
         }
-        h2 {
-            @include white-medium-title;
+        h3 {
             color: $black-text;
             margin: 2.25rem 0 2.5rem 0;
         }
@@ -144,20 +154,18 @@ header {
             padding: 0 4rem 0 4rem;
         }
         button {
-            @include blue-button;
             margin-top: 5rem;
+            @include blue-button;
         }
     }
 }
 
 .tools {
     background-color: $grey-bg;
-    h2 {
-        @include white-medium-title;
+    h3 {
         padding: 2.4rem 0 2.4rem 0;
     }
-    h4 {
-        @include orange-text;
+    h2 {
         padding-top: 1rem;
     }
     h5 {
@@ -190,12 +198,8 @@ header {
     background-color: $grey-bg;
     display: grid;
     place-items: center;
-    h2 {
-        @include white-medium-title;
+    h3 {
         padding: 2.5rem 0 2.5rem 0;
-    }
-    h4 {
-        @include orange-text;
     }
     h5 {
         @include normal-black-text;

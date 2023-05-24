@@ -29,7 +29,7 @@ include '../inc/header.php';
                 <div class="culture">
                     <img src="../img/first-minute-img/statue.jpg" class="img-fluid" alt="...">
                     <div>
-                        <h2>Kultúrne pamiatky</h2><br><br>
+                        <h3>Kultúrne pamiatky</h3><br><br>
                         <p>Socha Sun-c', vlastným menom Wu Sun-a. Bol autorom diela Umenie vojny, veľmi vplyvnej čínskej knihy o vojenskej stratégii. Bol jeden z prvých realistov v teórii medzinárodných vzťahov.</p>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ include '../inc/header.php';
                 <div class="culture">
                     <img src="../img/first-minute-img/meal.jpg" class="img-fluid" alt="...">
                     <div>
-                        <h2>Jedlo</h2><br><br>
+                        <h3>Jedlo</h3><br><br>
                         <p>Čína ponúka množstvo tradičných pestrých jedál. Rezance, ryža, zelenina, sója, huby, kuracie mäso, kačacie mäso, hovädzie mäso, morské plody a ryby tvoria základ v množstve čínskych jedál. K základným surovinám sa pridávajú u nás menej tradičné bambusové výhonky, riasy a klíčky.
                         </p>
                     </div>

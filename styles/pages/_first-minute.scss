@@ -9,6 +9,7 @@
     background-position: center;
     display: grid;
     place-items: center;
+    margin-top: toRem(120);
     h1 {
         font: {
             size: toRem(71);
@@ -31,9 +32,6 @@
     img {
         margin-right: 5rem;
     }
-    h2 {
-        @include white-medium-title;
-    }
     p {
         @include normal-white-text;
     }
@@ -43,11 +41,7 @@
     background: $orange-bg-gradient;
     padding-bottom: 8rem;
     h2 {
-        @include orange-text;
         color: $white-text;
-    }
-    h1 {
-        @include white-big-title;
     }
     p {
         font-size: toRem(18);

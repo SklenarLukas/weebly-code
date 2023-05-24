@@ -2,8 +2,8 @@
 @import "../../abstracts/mixins";
 
 .contact-us {
+    margin-top: toRem(120);
     background: $grey-bg;
-
     h1 {
         margin: 7rem 0 6rem 0;
         font: {
@@ -12,8 +12,7 @@
             weight: bold;
         }
     }
-    h3 {
-        @include orange-text;
+    h2 {
         text-transform: none;
         margin-bottom: 2rem;
     }

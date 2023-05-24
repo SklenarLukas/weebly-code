@@ -2,15 +2,10 @@
 @import "../../abstracts/mixins";
 
 .our-services {
+    margin-top: toRem(120);
     background: $grey-bg;
-    padding: 8rem 3rem 8rem 3rem;
-    h2 {
-        @include orange-text;
-    }
-    h1 {
-        @include white-big-title;
-    }
-    h3 {
+    padding: 5rem 3rem 8rem 3rem;
+    h5 {
         @include orange-text;
         text-transform: none;
         margin: 2rem 0 2rem 0;
@@ -23,16 +18,15 @@
 .call-us {
     background: $orange-bg-gradient;
     h1 {
-        @include white-big-title;
         margin: 4rem 0 3rem 0;
     }
     p {
         @include normal-white-text;
         font-size: toRem(18);
-        margin-bottom: 4.25rem
+        margin-bottom: 4.25rem;
     }
     button {
-        @include blue-button;
         margin-bottom: 2rem;
+        @include blue-button;
     }
 }

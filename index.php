@@ -22,7 +22,7 @@ include './inc/header.php';
     <div class="main-wrap">
         <section class="main-page">
             <div class="banner-main-page container">
-                <h2>Dovolenka leto 2023</h2>
+                <h6>Dovolenka leto 2023</h6>
                 <a href="./php-pages/first-minute.php"><button>prezerať ponuku</button></a>
             </div>
         </section>
@@ -30,19 +30,19 @@ include './inc/header.php';
         <section class="services">
             <div class="container text-center">
                 <h2>naše služby</h2>
-                <h3>Vám pomôžu pri cestovaní</h3>
+                <h4>Vám pomôžu pri cestovaní</h4>
                 <div class="row">
                     <div class="col">
                         <img src="img/home-img/letenky.jpg" class="img-fluid" alt="...">
-                        <h4>Letenky</h4>
+                        <h5>Letenky</h5>
                     </div>
                     <div class="col">
                         <img src="img/home-img/hotel.jpg" class="img-fluid" alt="...">
-                        <h4>Hotel</h4>
+                        <h5>Hotel</h5>
                     </div>
                     <div class="col">
                         <img src="img/home-img/sprievodca.jpg" class="img-fluid" alt="...">
-                        <h4>Sprievodca</h4>
+                        <h5>Sprievodca</h5>
                     </div>
                 </div>
                 <a href="./php-pages/another-services.php"><button>viac info</button></a>
@@ -51,8 +51,8 @@ include './inc/header.php';
 
         <section class="chinese-wall">
             <div class="container title-field">
-                <p class="destinations-title">destinácie</p>
-                <h2>Veľký čínsky múr</h2>
+                <h2 class="destinations-title">destinácie</h2>
+                <h3>Veľký čínsky múr</h3>
                 <p>Je starý systém opevnenia, ktorý sa ťahá naprieč severnou Čínou. Jeho účelom bolo chrániť Čínu pred
                     mongolskými vpádmi.
                     Múr sa tiahne v dĺžke 8 850 km. V niektorých úsekoch prebieha v niekoľkých líniách a vytvára
@@ -63,8 +63,8 @@ include './inc/header.php';
 
         <section class="tools">
             <div class="container">
-                <h4>inteligentné nástroje</h4>
-                <h2>Uľahčite si vaše hľadanie</h2>
+                <h2>inteligentné nástroje</h2>
+                <h3>Uľahčite si vaše hľadanie</h3>
                 <h6>Pre viac informácií kliknite na jednotlivé ikony</h6>
                 <div class="row">
                     <div class="col">
@@ -91,8 +91,8 @@ include './inc/header.php';
 
         <section class="reviews">
             <div class="container">
-                <h4>recenzie</h4>
-                <h2>Spokojní zákazníci</h2>
+                <h2>recenzie</h2>
+                <h3>Spokojní zákazníci</h3>
                 <div class="reviews-text">
                     <blockquote><img src="https://lsklenar.weebly.com/files/theme/images/quote.png?1669716181" class="img-fluid" alt=""></blockquote>
                     <h6>Boli sme veľmi spokojní s pomerom ceny a kvality, hotel bol čistý a služby fungovali tak, ako

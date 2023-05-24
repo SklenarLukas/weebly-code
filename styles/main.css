@@ -105,6 +105,28 @@ ol ul {
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  color: #f28924;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -116,7 +138,7 @@ header {
   background-color: #ffffff;
   height: 7.5rem;
   transition: 0.5s;
-  z-index: 1;
+  z-index: 99;
 }
 header ul {
   display: flex;
@@ -145,7 +167,7 @@ header ul .logo {
   -webkit-margin-end: 4rem;
           margin-inline-end: 4rem;
 }
-header a:is(:active, :visited, :link).active {
+header a:is(:active, :link, :visited).active {
   color: #2890d5;
 }
 
@@ -162,7 +184,7 @@ header a:is(:active, :visited, :link).active {
   background-position: bottom;
   background-size: cover;
 }
-.main-page h2 {
+.main-page h6 {
   font-size: 3rem;
   font-family: Arial;
   font-weight: bold;
@@ -197,14 +219,8 @@ header a:is(:active, :visited, :link).active {
 .services h2 {
   -webkit-padding-before: 3.5rem;
           padding-block-start: 3.5rem;
-  color: #f28924;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
 }
-.services h3 {
-  font-size: 2rem;
-  font-weight: bold;
+.services h4 {
   margin: 4rem 0 4rem 0;
 }
 .services button {
@@ -226,7 +242,7 @@ header a:is(:active, :visited, :link).active {
   background-color: #2073aa;
   transition: 0.3s ease;
 }
-.services h4 {
+.services h5 {
   margin-top: 2rem;
   font-size: 1.5rem;
   font-weight: bold;
@@ -252,9 +268,7 @@ header a:is(:active, :visited, :link).active {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.chinese-wall .title-field h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
+.chinese-wall .title-field h3 {
   color: #000000;
   margin: 2.25rem 0 2.5rem 0;
 }
@@ -263,6 +277,7 @@ header a:is(:active, :visited, :link).active {
   padding: 0 4rem 0 4rem;
 }
 .chinese-wall .title-field button {
+  margin-top: 5rem;
   color: #ffffff;
   padding: 0 2rem 0 2rem;
   font-size: 0.875rem;
@@ -275,7 +290,6 @@ header a:is(:active, :visited, :link).active {
   text-align: center;
   text-transform: uppercase;
   border: none;
-  margin-top: 5rem;
 }
 .chinese-wall .title-field button:hover {
   background-color: #2073aa;
@@ -285,16 +299,10 @@ header a:is(:active, :visited, :link).active {
 .tools {
   background-color: #323D3F;
 }
-.tools h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
+.tools h3 {
   padding: 2.4rem 0 2.4rem 0;
 }
-.tools h4 {
-  color: #f28924;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
+.tools h2 {
   padding-top: 1rem;
 }
 .tools h5 {
@@ -329,16 +337,8 @@ header a:is(:active, :visited, :link).active {
   display: grid;
   place-items: center;
 }
-.reviews h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
+.reviews h3 {
   padding: 2.5rem 0 2.5rem 0;
-}
-.reviews h4 {
-  color: #f28924;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
 }
 .reviews h5 {
   font-size: 1rem;
@@ -371,20 +371,11 @@ header a:is(:active, :visited, :link).active {
 }
 
 .our-services {
+  margin-top: 7.5rem;
   background: #323D3F;
-  padding: 8rem 3rem 8rem 3rem;
+  padding: 5rem 3rem 8rem 3rem;
 }
-.our-services h2 {
-  color: #f28924;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.our-services h1 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-.our-services h3 {
+.our-services h5 {
   color: #f28924;
   text-transform: uppercase;
   font-size: 1.5rem;
@@ -401,8 +392,6 @@ header a:is(:active, :visited, :link).active {
   background: linear-gradient(180deg, #f28924 0%, #e0c8b2 100%);
 }
 .call-us h1 {
-  font-size: 3rem;
-  font-weight: bold;
   margin: 4rem 0 3rem 0;
 }
 .call-us p {
@@ -412,6 +401,7 @@ header a:is(:active, :visited, :link).active {
   margin-bottom: 4.25rem;
 }
 .call-us button {
+  margin-bottom: 2rem;
   color: #ffffff;
   padding: 0 2rem 0 2rem;
   font-size: 0.875rem;
@@ -424,7 +414,6 @@ header a:is(:active, :visited, :link).active {
   text-align: center;
   text-transform: uppercase;
   border: none;
-  margin-bottom: 2rem;
 }
 .call-us button:hover {
   background-color: #2073aa;
@@ -436,8 +425,9 @@ header a:is(:active, :visited, :link).active {
   height: 77dvh;
   display: grid;
   place-items: center;
+  margin-top: 7.5rem;
 }
-.fav-destinations h1 {
+.fav-destinations h6 {
   font-size: 4.4375rem;
   font-family: "Arial", Helvetica, sans-serif;
   font-weight: bold;
@@ -461,18 +451,15 @@ header a:is(:active, :visited, :link).active {
   padding: 6rem 0 8rem 0;
 }
 .places h1 {
-  font-size: 3rem;
-  font-weight: bold;
   margin-bottom: 1rem;
-}
-.places h2 {
-  font-size: 2rem;
-  font-weight: bold;
 }
 .places p {
   font-size: 1rem;
   color: #ffffff;
   margin: 2rem 0 2rem 0;
+}
+.places .spacer {
+  margin-bottom: 18rem;
 }
 .places button {
   color: #ffffff;
@@ -492,9 +479,6 @@ header a:is(:active, :visited, :link).active {
   background-color: #2073aa;
   transition: 0.3s ease;
 }
-.places .spacer {
-  margin-bottom: 18rem;
-}
 
 .china-title {
   height: 60dvh;
@@ -504,6 +488,7 @@ header a:is(:active, :visited, :link).active {
   background-position: center;
   display: grid;
   place-items: center;
+  margin-top: 7.5rem;
 }
 .china-title h1 {
   font-size: 4.4375rem;
@@ -525,10 +510,6 @@ header a:is(:active, :visited, :link).active {
 .culture img {
   margin-right: 5rem;
 }
-.culture h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
 .culture p {
   font-size: 1rem;
   color: #ffffff;
@@ -539,15 +520,7 @@ header a:is(:active, :visited, :link).active {
   padding-bottom: 8rem;
 }
 .summer-destinations h2 {
-  color: #f28924;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
   color: #ffffff;
-}
-.summer-destinations h1 {
-  font-size: 3rem;
-  font-weight: bold;
 }
 .summer-destinations p {
   font-size: 1.125rem;
@@ -556,6 +529,7 @@ header a:is(:active, :visited, :link).active {
 }
 
 .contact-us {
+  margin-top: 7.5rem;
   background: #323D3F;
 }
 .contact-us h1 {
@@ -564,11 +538,7 @@ header a:is(:active, :visited, :link).active {
   font-family: "Arial", Helvetica, sans-serif;
   font-weight: bold;
 }
-.contact-us h3 {
-  color: #f28924;
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: bold;
+.contact-us h2 {
   text-transform: none;
   margin-bottom: 2rem;
 }

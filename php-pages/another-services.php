@@ -28,17 +28,17 @@ include '../inc/header.php';
                 <div class="row align-items-start">
                     <div class="col">
                         <img src="../img/another-services-img/flight-tickets.jpg" class="img-fluid" alt="...">
-                        <h3>Letenky</h3>
+                        <h5>Letenky</h5>
                         <p>Nemusíte hľadať a kupovať letenky, vyriešime to za vás.</p>
                     </div>
                     <div class="col">
                         <img src="../img/another-services-img/hotel.jpg" class="img-fluid" alt="...">
-                        <h3>Hotel</h3>
+                        <h5>Hotel</h5>
                         <p>Objednáme vám hotel.</p>
                     </div>
                     <div class="col">
                         <img src="../img/another-services-img/guide.jpg" class="img-fluid" alt="...">
-                        <h3>Sprievodca</h3>
+                        <h5>Sprievodca</h5>
                         <p>Môžete využiť služby súkromného sprievodcu.</p>
                     </div>
                 </div>

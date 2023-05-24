@@ -26,18 +26,18 @@ include '../inc/header.php';
 
                 <div class="row align-items-start">
                     <div class="col">
-                        <h3>Otváracie hodiny</h3>
+                        <h2>Otváracie hodiny</h2>
                         <p>Pracovné dni: 9:00 - 17:00</p>
                         <p>Sobota: 10:00 - 14:00</p>
                         <p>Nedeľa: zatvorené</p>
                     </div>
                     <div class="col">
-                        <h3>Sídlo</h3>
+                        <h2>Sídlo</h2>
                         <p>Predmestská 1630/68</p>
                         <p>Žilina</p>
                     </div>
                     <div class="col">
-                        <h3>Kontaktné údaje</h3>
+                        <h2>Kontaktné údaje</h2>
                         <p>Mobil: +421 905 313 131</p>
                         <p>Email: recepcia@exotravel.sk</p>
                     </div>

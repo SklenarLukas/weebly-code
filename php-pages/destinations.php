@@ -24,7 +24,7 @@ include '../inc/header.php';
             <div class="container text-center">
                 <div class="row align-items-center">
                     <div class="col">
-                        <h1 class="mt-5 mb-5">Obľúbené destinácie</h1>
+                        <h6 class="mt-5 mb-5">Obľúbené destinácie</h6>
                     </div>
                     <div class="col">
                         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -67,7 +67,7 @@ include '../inc/header.php';
                 <div class="row align-items-center spacer">
                     <div class="col txt-col">
                         <h1>Omán</h1>
-                        <h2>Fanar hotel</h2>
+                        <h4>Fanar hotel</h4>
                         <p>Orientálna krajina s tyrkysovým morom a bielymi plážami je snom každého dovolenkára.</p>
                         <button>omán</button>
                     </div>
@@ -82,7 +82,7 @@ include '../inc/header.php';
                     </div>
                     <div class="col txt-col">
                         <h1>Barcelona</h1>
-                        <h2>Hotel Jazz</h2>
+                        <h4>Hotel Jazz</h4>
                         <p>Prímorské mesto s množstvom kultúrnych pamiatok je veľmi vyhľadávanou destináciou.</p>
                         <button>barcelona</button>
                     </div>
@@ -91,7 +91,7 @@ include '../inc/header.php';
                 <div class="row align-items-center">
                     <div class="col txt-col">
                         <h1>Čína</h1>
-                        <h2>Čínsky múr</h2>
+                        <h4>Čínsky múr</h4>
                         <p>Starý systém opevnenia tiahnuci naprieč severnou Čínou ohúri každého nadšenca turistiky.</p>
                         <button>čína</button>
                     </div>
