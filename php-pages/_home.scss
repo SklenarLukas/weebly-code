@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     body {
         font-family: "Verdana", Geneva, Tahoma, sans-serif;
         color: $white-text;
@@ -20,12 +21,10 @@
     max-width: toRem(1170);
     padding: 0 1rem 0 1rem;
     margin: 0 auto;
-    box-sizing: border-box;
 }
 
 .main-wrap .container {
     padding: 50px;
-    box-sizing: border-box;
 }
 
 h1 {
