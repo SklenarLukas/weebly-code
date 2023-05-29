@@ -50,14 +50,18 @@ include './inc/header.php';
         </section>
 
         <section class="chinese-wall">
-            <div class="container title-field">
-                <h2 class="destinations-title">destinácie</h2>
-                <h3>Veľký čínsky múr</h3>
-                <p>Je starý systém opevnenia, ktorý sa ťahá naprieč severnou Čínou. Jeho účelom bolo chrániť Čínu pred
-                    mongolskými vpádmi.
-                    Múr sa tiahne v dĺžke 8 850 km. V niektorých úsekoch prebieha v niekoľkých líniách a vytvára
-                    odbočky, na iných miestach je naopak prerušený.</p>
-                <a href="./php-pages/destinations.php"><button>zistiť viac</button></a>
+            <div class="container">
+                <div class="title-field col-9">
+                    <div class="card-body">
+                        <h2 class="destinations-title">destinácie</h2>
+                        <h3>Veľký čínsky múr</h3>
+                        <p>Je starý systém opevnenia, ktorý sa ťahá naprieč severnou Čínou. Jeho účelom bolo chrániť Čínu pred
+                            mongolskými vpádmi.
+                            Múr sa tiahne v dĺžke 8 850 km. V niektorých úsekoch prebieha v niekoľkých líniách a vytvára
+                            odbočky, na iných miestach je naopak prerušený.</p>
+                        <a href="./php-pages/destinations.php"><button>zistiť viac</button></a>
+                    </div>
+                </div>
             </div>
         </section>
 

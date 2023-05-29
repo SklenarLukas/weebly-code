@@ -58,12 +58,13 @@ header {
         li {
             list-style: none;
             a {
+                font: {
+                    weight: bold;
+                    size: toRem(18);
+                }
                 text-decoration: none;
-                font-family: "Verdana", Geneva, Tahoma, sans-serif;
                 color: $nav-text-black;
-                font-weight: bold;
                 margin-inline-end: 1rem;
-                font-size: toRem(18);
                 &:hover {
                     color: $blue-nav-hover;
                     transition: 0.3s ease;
@@ -91,9 +92,11 @@ header {
     display: grid;
     place-items: center;
     height: 75dvh;
-    background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1975787020.jpg");
-    background-position: bottom;
-    background-size: cover;
+    background: {
+        image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1975787020.jpg");
+        position: bottom;
+        size: cover;
+    }
     h6 {
         font: {
             size: toRem(48);
@@ -130,19 +133,24 @@ header {
 }
 
 .chinese-wall {
-    background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1623097286.jpg");
-    background-position: bottom;
-    background-size: cover;
-    width: 100%;
+    background: {
+        image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1623097286.jpg");
+        position: middle;
+        size: cover;
+    }
     height: 75dvh;
-    display: grid;
+    .container {
+        display: grid;
+        place-items: center;
+    }
     .title-field {
-        margin-top: 3rem;
-        max-width: 40%;
-        height: 75%;
+        padding: 0 2rem 0 2rem;
+        margin-top: 2.5rem;
+        height: 108%;
         background-color: $white-opacity-bg;
         .destinations-title {
             @include orange-text;
+            margin-top: 4rem;
         }
         h3 {
             color: $black-text;
@@ -150,7 +158,7 @@ header {
         }
         p {
             color: $grey-text;
-            padding: 0 4rem 0 4rem;
+            padding: 0 6rem 0 6rem;
         }
         button {
             margin-top: 5rem;
@@ -173,8 +181,10 @@ header {
         font-weight: bold;
     }
     h6 {
-        font-size: toRem(18);
-        font-weight: bold;
+        font: {
+            size: toRem(18);
+            weight: bold;
+        }
         padding-bottom: 2.5rem;
     }
     p {
@@ -183,9 +193,8 @@ header {
     }
     .col {
         display: grid;
-        margin: 1rem;
+        margin: 1rem 1rem 6rem 1rem;
         background-color: $white-background;
-        margin-bottom: 5rem;
         a {
             padding: 4rem 0 3rem 0;
             justify-self: center;
@@ -206,10 +215,12 @@ header {
         font-weight: bold;
     }
     h6 {
-        font-size: toRem(22);
+        font: {
+            size: toRem(22);
+            family: "Georgia", Times New Roman, Times, serif;
+            style: italic;
+        }
         line-height: toRem(31);
-        font-family: "Georgia", Times New Roman, Times, serif;
-        font-style: italic;
         margin-bottom: 6rem;
     }
     .reviews-text {

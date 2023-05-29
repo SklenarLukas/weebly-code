@@ -147,13 +147,12 @@ header ul li {
   list-style: none;
 }
 header ul li a {
-  text-decoration: none;
-  font-family: "Verdana", Geneva, Tahoma, sans-serif;
-  color: #4f4f4e;
   font-weight: bold;
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #4f4f4e;
   -webkit-margin-end: 1rem;
           margin-inline-end: 1rem;
-  font-size: 1.125rem;
 }
 header ul li a:hover {
   color: #2890d5;
@@ -249,16 +248,18 @@ header a:is(:active, :link, :visited).active {
 
 .chinese-wall {
   background-image: url("https://lsklenar.weebly.com/uploads/1/4/3/7/143782816/background-images/1623097286.jpg");
-  background-position: bottom;
+  background-position: middle;
   background-size: cover;
-  width: 100%;
   height: 75dvh;
+}
+.chinese-wall .container {
   display: grid;
+  place-items: center;
 }
 .chinese-wall .title-field {
-  margin-top: 3rem;
-  max-width: 40%;
-  height: 75%;
+  padding: 0 2rem 0 2rem;
+  margin-top: 2.5rem;
+  height: 108%;
   background-color: rgba(255, 255, 255, 0.9019607843);
 }
 .chinese-wall .title-field .destinations-title {
@@ -266,6 +267,7 @@ header a:is(:active, :link, :visited).active {
   text-transform: uppercase;
   font-size: 1.5rem;
   font-weight: bold;
+  margin-top: 4rem;
 }
 .chinese-wall .title-field h3 {
   color: #000000;
@@ -273,7 +275,7 @@ header a:is(:active, :link, :visited).active {
 }
 .chinese-wall .title-field p {
   color: #3f3f3f;
-  padding: 0 4rem 0 4rem;
+  padding: 0 6rem 0 6rem;
 }
 .chinese-wall .title-field button {
   margin-top: 5rem;
@@ -322,9 +324,8 @@ header a:is(:active, :link, :visited).active {
 }
 .tools .col {
   display: grid;
-  margin: 1rem;
+  margin: 1rem 1rem 6rem 1rem;
   background-color: #ffffff;
-  margin-bottom: 5rem;
 }
 .tools .col a {
   padding: 4rem 0 3rem 0;
@@ -347,9 +348,9 @@ header a:is(:active, :link, :visited).active {
 }
 .reviews h6 {
   font-size: 1.375rem;
-  line-height: 1.9375rem;
   font-family: "Georgia", Times New Roman, Times, serif;
   font-style: italic;
+  line-height: 1.9375rem;
   margin-bottom: 6rem;
 }
 .reviews .reviews-text {
